@@ -2,7 +2,9 @@ const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
 const files = require('./lib/files');
-const inquirer  = require('./lib/inquirer');
+// const inquirer  = require('./lib/inquirer');
+const Configstore = require('configstore');
+const conf = new Configstore('ginit');
 
 // if (files.directoryExists('.git')) {
 //   console.log(chalk.red('Already a Git repository!'));
