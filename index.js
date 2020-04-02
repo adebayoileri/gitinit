@@ -1,3 +1,8 @@
+#!/usr/bin/env node;
+/* 
+*SHEBang  Line
+*/
+
 const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
@@ -29,6 +34,18 @@ const run = async () => {
   }
 };
 
+const getGithubToken = async () => {
+  // Fetch token from config store
+  let token = github.getStoredGithubToken();
+  if(token) {
+    return token;
+  }
+
+  // No token found, use credentials to access GitHub account
+  token = await github.getPersonalAccesToken();
+
+  return token;
+};
 
 
 run();
