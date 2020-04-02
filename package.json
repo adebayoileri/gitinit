@@ -30,5 +30,8 @@
     "minimist": "^1.2.5",
     "simple-git": "^1.132.0",
     "touch": "^3.1.0"
+  },
+  "bin": {
+    "ginit": "./index.js"
   }
 }
