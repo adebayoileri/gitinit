@@ -17,14 +17,19 @@ const github = require('./lib/github');
 //   console.log(credentials);
 // };
 
-
 const run = async () => {
-  let token = github.getStoredGithubToken();
-  if(!token) {
-    token = await github.getPersonalAccesToken();
+  try {
+    let token = github.getStoredGithubToken();
+    if(!token) {
+      token = await github.getPersonalAccesToken();
+    }
+    console.log(token);
+  } catch (error) {
+    console.error(error);
   }
-  console.log(token);
 };
+
+
 
 run();
 // console.log(
