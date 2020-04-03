@@ -21,6 +21,11 @@ const github = require('./lib/github');
 //   const credentials = await inquirer.askGithubCredentials();
 //   console.log(credentials);
 // };
+console.log(
+    chalk.white(
+      figlet.textSync('Gitinit', { horizontalLayout: 'full' })
+    )
+  );
 
 const run = async () => {
   try {
