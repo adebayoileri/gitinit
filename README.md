@@ -21,4 +21,4 @@ Following repetitive steps involved in the process of hooking up a new or existi
 - commit the initial set of files
 - push up to the remote repository.
 
-# NB : The github cli auth is deprecated so the project is currnently not functional
+###  NB : The github cli auth is deprecated so the project is currnently not functional
