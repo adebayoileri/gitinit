@@ -11,7 +11,7 @@ ginit but on "steriods" 🚀
 
 # About Project
 Make Setting up git project easy
-## these repetitive steps involved in the process of hooking up a new or existing project to Git. For example, as part of a typical workflow, you may well:
+Following repetitive steps involved in the process of hooking up a new or existing project to Git. For example, as part of a typical workflow, you may well:
 
 - initialize the local repository by running git init
  - create a remote repository, for example on GitHub or Bitbucket — typically by leaving the command line and firing up a web browser
@@ -20,3 +20,5 @@ Make Setting up git project easy
 - add your project files
 - commit the initial set of files
 - push up to the remote repository.
+
+# NB : The github cli auth is deprecated so the project is currnently not functional
